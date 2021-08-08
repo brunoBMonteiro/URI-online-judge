@@ -1,7 +1,7 @@
 # URI-online-judge
 This repository contains URI online judge exercises.
 
-URI 1003 JAVA
+URI 1003 JAVA - Soma simples
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -22,7 +22,7 @@ public class Main {
  
 }
 
-URI 1004 JAVA
+URI 1004 JAVA - Produto simples
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -41,7 +41,7 @@ public class Main {
  
 }
 
-URI 1005 JAVA
+URI 1005 JAVA - Média 1
 
 import java.io.IOException;
 import java.util.Scanner; 
@@ -58,6 +58,27 @@ public class Main {
         System.out.printf("MEDIA = %.5f%n", MEDIA);
 
 
+        input.close();
+    }
+ 
+}
+
+URI 1006 JAVA - Média 2
+
+import java.io.IOException;
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner input = new Scanner(System.in);
+    
+        double A = input.nextDouble();
+        double B = input.nextDouble();
+        double C = input.nextDouble();
+        double MEDIA = ((A * 2.0) + (B * 3.0) + (C * 5.0)) / 10.0;
+    
+        System.out.printf("MEDIA = %.1f%n", MEDIA);
         input.close();
     }
  
