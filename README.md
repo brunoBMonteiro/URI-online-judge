@@ -40,3 +40,25 @@ public class Main {
     }
  
 }
+
+URI 1005 JAVA
+
+import java.io.IOException;
+import java.util.Scanner; 
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner input = new Scanner(System.in);
+        
+        double A = input.nextDouble();
+        double B = input.nextDouble();
+        double MEDIA = ((A * 3.5) + (B * 7.5)) / 11.0;
+        
+        System.out.printf("MEDIA = %.5f%n", MEDIA);
+
+
+        input.close();
+    }
+ 
+}
