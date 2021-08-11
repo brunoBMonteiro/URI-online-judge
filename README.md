@@ -106,3 +106,30 @@ public class Main {
     }
  
 }
+
+URI 1008 JAVA - Salário
+
+
+URI 1009 JAVA - Sslário com Bonus
+
+import java.io.IOException;
+import java.util.Scanner; 
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+         Scanner input = new Scanner(System.in);
+         
+         String nomeVendedor = input.next();
+         double salarioFixo = input.nextDouble();
+         double vendasEfetuadas = input.nextDouble();
+         double comissao = vendasEfetuadas * 0.15;
+         double salarioFinal = salarioFixo + comissao;
+                  
+
+         System.out.printf("TOTAL = R$ %.2f%n", salarioFinal);
+         
+         input.close();
+    }
+ 
+}
