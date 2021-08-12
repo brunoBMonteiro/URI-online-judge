@@ -133,3 +133,32 @@ public class Main {
     }
  
 }
+
+URI 1010 JAVA - Cálculo simples
+
+import java.io.IOException;
+import java.util.Scanner; 
+ 
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+         Scanner input = new Scanner(System.in);
+         
+         int codigoPeca1 = input.nextInt();
+         int qtdPeca1 = input.nextInt();
+         double valorPeca1 = input.nextDouble();
+         int codigoPeca2 = input.nextInt();
+         int qtdPeca2 = input.nextInt();
+         double valorPeca2 = input.nextDouble();
+         
+         double custoTotal = qtdPeca1 * valorPeca1 + qtdPeca2 * valorPeca2;
+
+         System.out.printf("VALOR A PAGAR: R$ %.2f%n", custoTotal);
+         
+         input.close();
+    }
+ 
+}
+
+URI 1011 JAVA - Esfera
+
